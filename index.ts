@@ -2,7 +2,7 @@ import { of } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 import { interval } from 'rxjs';
 import { take, finalize } from 'rxjs/operators';
-//import { toPromise} from 'rxjs/add/operators'
+import { toPromise} from 'rxjs/add/operators'
 
 // const source = of(1, 2, 3, 4, 5);
 
@@ -39,9 +39,5 @@ import { take, finalize } from 'rxjs/operators';
 
 
 
-// // toPromise operator converts observable into promise
-// //return basic observable
-// const sample = val => of(val).pipe(delay(5000));
-// //convert basic observable to promise
-// const examplePromise = sample('First Example').pipe(toPromise())  //output: 'First Example'
-// .then(result => {    console.log('From Promise:', result);  });
+
+ const examplePromise = of('Pasta','Pizza').toPromise().then(result => { console.log('From Promise:',examplePromise );  });
