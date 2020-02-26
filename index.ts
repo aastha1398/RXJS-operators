@@ -40,4 +40,4 @@ import { toPromise} from 'rxjs/add/operators'
 
 
 
- const examplePromise = of('Pasta','Pizza').toPromise().then(result => { console.log('From Promise:',examplePromise );  });
+ const examplePromise = of('Pasta','Pizza').toPromise().then(result => { console.log('From Promise:',result );  });
